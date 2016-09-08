@@ -470,7 +470,7 @@ declare class Map<K,V> extends KeyedCollection<K,V> {
 
   static isMap(maybeMap: any): boolean;
 
-  set<K_, V_>(key: K_, value: V_): Map<K|K_, V|V_>;
+  set<K_, V_>(key: K_, value: V_): this;
   delete(key: K): this;
   remove(key: K): this;
   clear(): this;
